@@ -45,3 +45,14 @@ group :development do
   gem 'spring'
 end
 
+group :production do
+	# Added to query database in production environment
+	gem 'rails_12factor'
+	gem 'pg'
+end
+
+group :development, :test do
+	# Added to ensure it only complies in a test or development environment
+	gem 'sqlite3'
+end
+
