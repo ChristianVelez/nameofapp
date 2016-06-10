@@ -1,6 +1,6 @@
 == README
 
-Hi, my name is Christian Velez and this is my first web application using Rails and Ruby...or Ruby on Rails.  Queue the laugh track.
+Hi, my name is Christian Velez and this is my first web application using Rails and Ruby...or Ruby on Rails.  Queue the laugh track now.
 
 Things you may want to cover:
 
