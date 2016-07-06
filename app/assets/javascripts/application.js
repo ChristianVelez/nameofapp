@@ -14,3 +14,12 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+//Menu button
+ $('.navbar-collapse ul li a').click(function(){ 
+            $('.navbar-toggle:visible').click();
+    });
+
+ };
+
+});

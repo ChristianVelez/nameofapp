@@ -1,0 +1,367 @@
+// Place all the styles related to the static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* - - - - Global Styles - - - - */
+
+$font-stack : 'Varela Round', Helvetica, sans-serif;
+$primary-color : #ececea; /*#f5f5f5; #bcd4e6;*/
+$secondary-color : #e6cebc;
+$text-color : #666666;
+ 
+
+/* - - - - - Global resets - - - - - */
+
+* { box-sizing: inherit; }
+
+html { box-sizing: border-box; 
+  
+  body {
+  font: 100% $font-stack;
+  color: $text-color;
+  background-color: $primary-color;
+  letter-spacing: .1em;
+  }
+
+}
+
+/* - - - - Nav bar styles - - - */
+
+.navbar-default {
+	background-color: $primary-color;
+	font: 100% $font-stack;
+	font-size: 1.25em;
+	letter-spacing: .125em;
+	border-bottom: 0;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: $text-color;
+	text-transform: uppercase;
+	padding-top: 16px;
+	display: inline-block;
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+}
+
+ .navbar-default .navbar-nav>li>a:hover {
+    color: #333;
+    background-color: #f8f8f7;
+    border-radius: 0 0 10px 10px ;
+}
+
+.navbar-header {
+	padding-top: 16px;
+}
+
+.navbar-toggle {
+	margin-top: 0;
+}
+
+
+.menu, .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+#logo {
+  position: absolute;
+}
+/* - - - - main wrapper all pages- - - */ 
+
+.wrapper {
+	padding: 0 45px;
+  width: 100%;
+  min-width: 70%;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+}
+
+/* - - - - - About styles - - - -  */
+
+.contact {
+  img {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .about_text h4 {
+  padding-top: 180px;
+  text-transform: uppercase;
+  text-align: left;
+  margin: 0 auto;
+  width: 100%;
+  }
+
+  .about_text {
+
+     p {
+    font-size: 1.4em;
+    line-height: 1.7em;
+    }
+  }
+}
+
+
+@media (max-width: 900px) 
+{
+    .col-sm-5
+    {
+        display: none;
+    }
+    
+
+}
+
+
+
+/* - - - - - Carousel styles - - - -  */
+
+
+.carousel-control:hover {
+  opacity: .025;
+}
+
+.carousel-control.right, .carousel-control.left {
+  background-image:none;
+  opacity: 0;
+}
+
+.carousel-caption {
+  font-family: $font-stack;
+  font-size: 2em;
+  color: #000;
+}
+
+.carousel-indicators li {
+  background-color: $primary-color;
+}
+
+.carousel-indicators .active {
+  background-color: #444;
+}
+
+.carousel-inner img {
+  margin: auto;
+  border-radius: 25px;
+  background-color: white;
+  overflow: none;
+}
+
+.product-listings {
+  .img-responsive {
+  border: white medium solid;
+  background-color: #f8f8f7;
+
+  }
+}
+
+.col-center {
+   float: none;
+   margin-right: auto;
+   margin-left: auto;
+    h2{
+        margin-top: -5px;
+    }
+}
+
+@media(max-width: 900px) {
+  .col-center h2 
+    {
+        display: none; 
+    }
+    
+}
+
+/* ----- home page -----*/
+
+/*.home-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 80px;*/
+ .home-text {
+  background-color: white;
+  border-radius: 10px;
+  height: 450px auto;
+  padding-bottom:  40px;
+  padding-right: 5px;
+  border: none;
+  /*margin-right: auto;
+  margin-left: auto;
+  max-width: 80%;
+  /*border-left:3px transparent; 
+   border-right:3px transparent;*/
+}
+
+/*.home-text2 {
+  background-color: white;
+  border-radius: 10px;
+  height: 450px;
+  padding-bottom:  40px;
+  padding-left: 5px;
+}
+
+.space {
+  padding: 5px;
+}*/
+
+.cliente {
+  padding: 15px;
+  margin-top:10px;
+  border: white medium solid;
+  background-color: #f8f8f7;
+  border-radius: 10px;
+  height: 50%;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+    
+    h3 {
+      text-align: left;
+    }
+    p {
+      font-size: 1.5em;
+      font-size-adjust: .58em;
+      text-align: left;
+      line-height: 2em;
+      white-space: wrap;
+      overflow: scroll;
+      text-overflow: ellipsis;
+    }
+    
+    .right {
+      text-align: right;
+      margin-top: 10px;
+      text-transform: uppercase;
+      
+
+    }
+
+    
+}
+
+
+/* ------- contact page ---- */
+
+.form-sign-in-with-social{
+    display: inline-block;
+    max-width: 180px;
+    box-sizing: border-box;
+    vertical-align: top;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.form-sign-in-with-social .form-title-row{
+    margin-bottom: 50px;
+}
+
+.form-sign-in-with-social .form-title{
+    box-sizing: border-box;
+    color:  #4c565e;
+    font-size: 24px;
+    padding: 15px 20px;
+    border-bottom: 2px solid #6caee0;
+}
+
+.form-sign-in-with-social .form-google-button{
+    color:  #ffffff;
+    display: block;
+    width: 145px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 40px;
+    background-color:  rgba(222, 110, 60, 0.9);
+    box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.08);
+    border-radius: 2px;
+    margin: 8px auto;
+    text-decoration: none;
+}
+
+.form-sign-in-with-social .form-facebook-button{
+    color:  #ffffff;
+    display: block;
+    width: 145px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 40px;
+    background-color:  rgba(75, 136, 194, 0.9);
+    box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.08);
+    border-radius: 2px;
+    margin: 8px auto;
+    text-decoration: none;
+}
+
+.form-sign-in-with-social .form-twitter-button{
+    color:  #ffffff;
+    display: block;
+    width: 145px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 40px;
+    background-color:  rgba(123, 195, 226, 0.9);
+    box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.08);
+    border-radius: 2px;
+    margin: 8px auto;
+    text-decoration: none;
+}
+
+
+.contact {
+  border: white medium solid;
+  background-color: #f8f8f7;
+  border-radius: 10px;
+  height: 450px;
+  padding-bottom: 40px;
+  padding-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 80%;
+
+  h3 {
+      text-transform: uppercase;
+      }
+
+      .button {
+        border: 2px solid #0099cc;
+        color: #0099cc;
+
+      }
+}
+
+
+
+@media(max-width: 900px) {
+  .contact .about_text h4 
+    {
+        padding-top: inherit; 
+    }
+    
+}
+
+
+
+/*.wrap {
+    display: flex;
+    flex-direction: column;
+  }*/
+
+
+
+/* ------ footer styles ------*/
+
+.main-footer {
+	font-size: 1.25em;
+	text-align: center;
+  margin: 5px 5px 0 5px;
+  padding-top: 5px;
+}
+
+
+

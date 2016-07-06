@@ -1,2 +1,44 @@
-<h1>StaticPages#contact</h1>
-<p>Find me in app/views/static_pages/contact.html.erb</p>
+<% provide(:title, "Contact") %>
+
+	<div class="container contact">
+		<div class="row text-center">
+      <div class="col-md-8 con_form"> 
+
+        <form>
+        <div class="form-row form-title-row">
+                    <span class="form-title"><h3>Drop us a line!</h3></span>
+                </div>
+                <hr>
+  <fieldset class="form-group">
+    <label for="formGroupExampleInput"></label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Name">
+  </fieldset>
+  <fieldset class="form-group">
+    <label for="formGroupExampleInput2"></label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Email">
+  </fieldset>
+  <fieldset class="form-group">
+    <label for="exampleTextarea"></label>
+    <textarea class="form-control" id="exampleTextarea" rows="6" placeholder="Comment"></textarea>
+  </fieldset>
+   <button type="submit" class="btn btn-primary-outline">Submit</button>
+</form>
+      </div>
+     
+      <div class="col-md-4"> 
+        <div class="form-sign-in-with-social">
+        <div class="form-row form-title-row">
+                    <span class="form-title">Find us on</span>
+                </div>
+
+                <a href="#" class="form-google-button">Google</a>
+                <a href="#" class="form-facebook-button">Facebook</a>
+                <a href="#" class="form-twitter-button">Twitter</a>
+</div> 
+ 					 
+          
+        </div>
+      </div>
+      
+  </div>
+	</div>
