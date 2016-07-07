@@ -21,25 +21,29 @@ html { box-sizing: border-box;
   color: $text-color;
   background-color: $primary-color;
   letter-spacing: .1em;
+  
   }
-
+  body{
+    margin: 0;
+    padding: 0;
+  }
 }
 
 /* - - - - Nav bar styles - - - */
 
 .navbar-default {
-	background-color: $primary-color;
-	font: 100% $font-stack;
-	font-size: 1.25em;
-	letter-spacing: .125em;
-	border-bottom: 0;
+  background-color: $primary-color;
+  font: 100% $font-stack;
+  font-size: 1.25em;
+  letter-spacing: .125em;
+  border-bottom: 0;
 }
 
 .navbar-default .navbar-nav > li > a {
-	color: $text-color;
-	text-transform: uppercase;
-	padding-top: 16px;
-	display: inline-block;
+  color: $text-color;
+  text-transform: uppercase;
+  padding-top: 16px;
+  display: inline-block;
   transition-duration: 0.5s;
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
@@ -51,12 +55,18 @@ html { box-sizing: border-box;
     border-radius: 0 0 10px 10px ;
 }
 
-.navbar-header {
-	padding-top: 16px;
-}
+/*.navbar-header {
+  padding-top: 16px;
+  margin-right: auto;
+  margin-left: auto;
+
+  #logo {
+    padding-left: 40px;
+  }
+}*/
 
 .navbar-toggle {
-	margin-top: 0;
+  margin-top: 0;
 }
 
 
@@ -67,9 +77,49 @@ html { box-sizing: border-box;
     margin-left: 100px;
 }
 
-#logo {
-  position: absolute;
+
+.logo {
+    vertical-align: middle;
+    padding-top: 15px;
+    margin: auto;
+    padding-left: 180px;
+    position: absolute;
+  }
+
+@media (max-width: 900px) {
+
+  .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover, .navbar-toggle {
+    background-color:transparent;
+    float: none;
+    
+    padding-right: 1px;
+  }
+
+  .navbar-default .navbar-toggle {
+    border-color: transparent; 
 }
+  .navbar-toggle {
+    margin-top: 12px;
+}
+  .logo {
+    padding-left: inherit;
+  }
+}
+
+
+
+/*@media (min-width: 768px) {
+   .collapse {
+       display: none !important;
+   }
+} */
+
+.form-control .new {
+    min-width: 0;
+    width: 40%;
+    display: inline;
+}
+
 /* - - - - main wrapper all pages- - - */ 
 
 .wrapper {
