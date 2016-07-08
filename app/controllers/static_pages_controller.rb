@@ -15,9 +15,7 @@ class StaticPagesController < ApplicationController
   ActionMailer::Base.mail(:from => @email,
       :to => 'christian.velez1@gmail.com',
       :subject => "A new contact form message from #{@name}",
-      :body => @message).deliver_now do | format |
-      format.html { render layout: 'contact_form.html.erb' }
-    end
+      :body => @message).deliver_now
 end
 
 end
