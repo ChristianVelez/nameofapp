@@ -1,7 +1,6 @@
 class UserMailer < ApplicationMailer
   default from: "john@example.com"
   
-  layout 'mailer'
 
   def contact_form(email, name, message)
   @message = message
