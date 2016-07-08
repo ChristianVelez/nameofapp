@@ -1,9 +1,11 @@
 <%= flash[:notice] %>
 
+<%= flash[:notice] %>
+
 <%= form_tag("/static_pages/thank_you") do %>
 
 <div class="container contact">
-	<div class="row text-center">
+  <div class="row text-center">
     <div class="col-md-8 con_form"> 
       <form>
         <div class="form-row form-title-row">
@@ -11,25 +13,25 @@
         </div>
               <hr>
         <fieldset class="form-group">
-          <label for="formGroupExampleInput"></label>
-          <input type="text" class="form-control" id="name" placeholder="Name">
+         
+          <%= text_field_tag :name, nil, class: "form-control", placeholder: "Name" %>
         </fieldset>
         
         <fieldset class="form-group">
-          <label for="formGroupExampleInput2"></label>
-          <input type="text" class="form-control" id="email" placeholder="Email">
-        </fieldset>
-        
-        <fieldset class="form-group">
-          <label for="exampleTextarea"></label>
-          <textarea class="form-control" id="message" rows="6" placeholder="Message"></textarea>
-        </fieldset>
           
-        <button class="btn btn-primary-outline"><input name="commit" type="submit" value="Send" />  
-        </button>
-      </form>
+          <%= text_field_tag :email, nil, class: "form-control", placeholder: "Email" %>
+        </fieldset>
+        
+        <fieldset class="form-group">
+          
+          <%= text_area_tag :message, nil, class: "form-control", rows: 6, placeholder: "Message" %>
+        </fieldset>
+    
+    <%= submit_tag "Send", class: "btn btn-default" %>  
+
+     </form>
     </div>
-   
+
     <div class="col-md-4"> 
       <div class="form-sign-in-with-social">
         <div class="form-row form-title-row">
@@ -43,5 +45,7 @@
     </div>  
   </div>
 </div>
+       
+
 
 <% end %>
