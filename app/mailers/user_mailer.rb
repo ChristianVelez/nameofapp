@@ -10,12 +10,12 @@ class UserMailer < ApplicationMailer
 
 def contact_form(email, name, message)
   @message = message
-  attachments.inline['bike_logo4.svg'] = File.read( Rails.root.join('app/assets/images/bike_logo4.svg'))
-  attachments.inline['facebook.svg'] = File.read( Rails.root.join('app/assets/images/facebook.svg'))
-  attachments.inline['twitter.svg'] = File.read(Rails.root.join('app/assets/images/twitter.svg'))
     mail(:from => email,
         :to => 'your-email@example.com',
-        :subject => "A new contact form message from #{name}")
+        :subject => "A new contact form message from #{name}") do |format|
+               format.html { render 'contact_form' }
+               format.text { render :text => 'mailer.txt.erb' }
+             end
   end
 
 end
