@@ -48,6 +48,7 @@ GEM
       sass (>= 3.3.4)
     builder (3.2.2)
     byebug (9.0.5)
+    cancancan (1.15.0)
     cloudinary (1.2.0)
       aws_cf_signer
       rest-client
@@ -186,6 +187,7 @@ PLATFORMS
 DEPENDENCIES
   bootstrap-sass (~> 3.3, >= 3.3.6)
   byebug
+  cancancan
   cloudinary
   coffee-rails (~> 4.1.0)
   devise
