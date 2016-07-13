@@ -1,0 +1,512 @@
+/* line 5, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/products.scss */
+.products {
+  border-collapse: separate;
+  border-spacing: 15px;
+}
+
+/* line 10, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/products.scss */
+.product-heading {
+  text-align: center;
+}
+
+/* line 14, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/products.scss */
+.product-listings {
+  text-align: center;
+}
+
+/* line 18, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/products.scss */
+.product-listings img {
+  margin: auto;
+  border-radius: 25px;
+  background-color: transparent;
+  overflow: hidden;
+}
+/* line 1, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 9, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 15, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 21, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 24, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 28, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 35, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 40, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 44, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 50, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 58, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 69, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+/* - - - - Global Styles - - - - */
+/*#f5f5f5; #bcd4e6;*/
+/* - - - - - Global resets - - - - - */
+/* line 16, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/static_pages.css.scss */
+* {
+  box-sizing: inherit;
+}
+
+/* line 18, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/static_pages.css.scss */
+html {
+  box-sizing: border-box;
+}
+/* line 20, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/static_pages.css.scss */
+html body {
+  font: 100% "Varela Round", Helvetica, sans-serif;
+  color: #666666;
+  background-color: #ececea;
+  letter-spacing: .1em;
+}
+/* line 27, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/static_pages.css.scss */
+html body {
+  margin: 0;
+  padding: 0;
+}
+
+/* - - - - Nav bar styles - - - */
+/* line 35, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/static_pages.css.scss */
+.navbar-default {
+  background-color: #ececea;
+  font: 100% "Varela Round", Helvetica, sans-serif;
+  font-size: 1.25em;
+  letter-spacing: .125em;
+  border-bottom: 0;
+}
+
+/* line 43, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/static_pages.css.scss */
+.navbar-default .navbar-nav > li > a {
+  color: #666666;
+  text-transform: uppercase;
+  padding-top: 16px;
+  display: inline-block;
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+}
+
+/* line 53, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/static_pages.css.scss */
+.navbar-default .navbar-nav > li > a:hover {
+  color: #333;
+  background-color: #f8f8f7;
+  border-radius: 0 0 10px 10px;
+}
+
+/*.navbar-header {
+  padding-top: 16px;
+  margin-right: auto;
+  margin-left: auto;
+
+  #logo {
+    padding-left: 40px;
+  }
+}*/
+/* line 69, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/static_pages.css.scss */
+.navbar-toggle {
+  margin-top: 0;
+}
+
+/* line 74, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/static_pages.css.scss */
+.menu, .container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+/* line 82, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/static_pages.css.scss */
+.logo {
+  vertical-align: middle;
+  padding-top: 15px;
+  margin: auto;
+  padding-left: 180px;
+  position: absolute;
+}
+
+@media (max-width: 900px) {
+  /* line 92, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/static_pages.css.scss */
+  .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover, .navbar-toggle {
+    background-color: transparent;
+    float: none;
+    padding-right: 1px;
+  }
+
+  /* line 99, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/static_pages.css.scss */
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+  }
+
+  /* line 102, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/static_pages.css.scss */
+  .navbar-toggle {
+    margin-top: 12px;
+  }
+
+  /* line 105, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/static_pages.css.scss */
+  .logo {
+    padding-left: inherit;
+  }
+}
+/*@media (min-width: 768px) {
+   .collapse {
+       display: none !important;
+   }
+} */
+/* line 118, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/static_pages.css.scss */
+.form-control .new {
+  min-width: 0;
+  width: 40%;
+  display: inline;
+}
+
+/* - - - - main wrapper all pages- - - */
+/* line 126, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/static_pages.css.scss */
+.wrapper {
+  padding: 0 45px;
+  width: 100%;
+  min-width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* - - - - - About styles - - - -  */
+/* line 138, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/static_pages.css.scss */
+.contact img {
+  width: 100%;
+  margin: 0 auto;
+}
+/* line 143, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/static_pages.css.scss */
+.contact .about_text h4 {
+  padding-top: 180px;
+  text-transform: uppercase;
+  text-align: left;
+  margin: 0 auto;
+  width: 100%;
+}
+/* line 153, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/static_pages.css.scss */
+.contact .about_text p {
+  font-size: 1.4em;
+  line-height: 1.7em;
+}
+
+@media (max-width: 900px) {
+  /* line 163, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/static_pages.css.scss */
+  .col-sm-5 {
+    display: none;
+  }
+}
+/* - - - - - Carousel styles - - - -  */
+/* line 176, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/static_pages.css.scss */
+.carousel-control:hover {
+  opacity: .025;
+}
+
+/* line 180, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/static_pages.css.scss */
+.carousel-control.right, .carousel-control.left {
+  background-image: none;
+  opacity: 0;
+}
+
+/* line 185, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/static_pages.css.scss */
+.carousel-caption {
+  font-family: "Varela Round", Helvetica, sans-serif;
+  font-size: 2em;
+  color: #000;
+}
+
+/* line 191, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/static_pages.css.scss */
+.carousel-indicators li {
+  background-color: #ececea;
+}
+
+/* line 195, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/static_pages.css.scss */
+.carousel-indicators .active {
+  background-color: #444;
+}
+
+/* line 199, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/static_pages.css.scss */
+.carousel-inner img {
+  margin: auto;
+  border-radius: 25px;
+  background-color: white;
+  overflow: none;
+}
+
+/* line 207, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/static_pages.css.scss */
+.product-listings .img-responsive {
+  border: white medium solid;
+  background-color: #f8f8f7;
+}
+
+/* line 214, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/static_pages.css.scss */
+.col-center {
+  float: none;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* line 218, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/static_pages.css.scss */
+.col-center h2 {
+  margin-top: -5px;
+}
+
+@media (max-width: 900px) {
+  /* line 224, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/static_pages.css.scss */
+  .col-center h2 {
+    display: none;
+  }
+}
+/* ----- home page -----*/
+/*.home-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 80px;*/
+/* line 240, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/static_pages.css.scss */
+.home-text {
+  background-color: white;
+  border-radius: 10px;
+  height: 450px auto;
+  padding-bottom: 40px;
+  padding-right: 5px;
+  border: none;
+  /*margin-right: auto;
+  margin-left: auto;
+  max-width: 80%;
+  /*border-left:3px transparent; 
+   border-right:3px transparent;*/
+}
+
+/*.home-text2 {
+  background-color: white;
+  border-radius: 10px;
+  height: 450px;
+  padding-bottom:  40px;
+  padding-left: 5px;
+}
+
+.space {
+  padding: 5px;
+}*/
+/* line 266, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/static_pages.css.scss */
+.cliente {
+  padding: 15px;
+  margin-top: 10px;
+  border: white medium solid;
+  background-color: #f8f8f7;
+  border-radius: 10px;
+  height: 50%;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+/* line 276, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/static_pages.css.scss */
+.cliente h3 {
+  text-align: left;
+}
+/* line 279, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/static_pages.css.scss */
+.cliente p {
+  font-size: 1.5em;
+  font-size-adjust: .58em;
+  text-align: left;
+  line-height: 2em;
+  white-space: wrap;
+  overflow: scroll;
+  text-overflow: ellipsis;
+}
+/* line 289, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/static_pages.css.scss */
+.cliente .right {
+  text-align: right;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+/* ------- contact page ---- */
+/* line 303, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/static_pages.css.scss */
+.form-sign-in-with-social {
+  display: inline-block;
+  max-width: 180px;
+  box-sizing: border-box;
+  vertical-align: top;
+  text-align: center;
+  margin-top: 100px;
+}
+
+/* line 312, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/static_pages.css.scss */
+.form-sign-in-with-social .form-title-row {
+  margin-bottom: 50px;
+}
+
+/* line 316, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/static_pages.css.scss */
+.form-sign-in-with-social .form-title {
+  box-sizing: border-box;
+  color: #4c565e;
+  font-size: 24px;
+  padding: 15px 20px;
+  border-bottom: 2px solid #6caee0;
+}
+
+/* line 324, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/static_pages.css.scss */
+.form-sign-in-with-social .form-google-button {
+  color: #ffffff;
+  display: block;
+  width: 145px;
+  height: 40px;
+  font-size: 12px;
+  line-height: 40px;
+  background-color: rgba(222, 110, 60, 0.9);
+  box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.08);
+  border-radius: 2px;
+  margin: 8px auto;
+  text-decoration: none;
+}
+
+/* line 338, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/static_pages.css.scss */
+.form-sign-in-with-social .form-facebook-button {
+  color: #ffffff;
+  display: block;
+  width: 145px;
+  height: 40px;
+  font-size: 12px;
+  line-height: 40px;
+  background-color: rgba(75, 136, 194, 0.9);
+  box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.08);
+  border-radius: 2px;
+  margin: 8px auto;
+  text-decoration: none;
+}
+
+/* line 352, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/static_pages.css.scss */
+.form-sign-in-with-social .form-twitter-button {
+  color: #ffffff;
+  display: block;
+  width: 145px;
+  height: 40px;
+  font-size: 12px;
+  line-height: 40px;
+  background-color: rgba(123, 195, 226, 0.9);
+  box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.08);
+  border-radius: 2px;
+  margin: 8px auto;
+  text-decoration: none;
+}
+
+/* line 367, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/static_pages.css.scss */
+.contact {
+  border: white medium solid;
+  background-color: #f8f8f7;
+  border-radius: 10px;
+  height: 450px;
+  padding-bottom: 40px;
+  padding-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 80%;
+}
+/* line 378, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/static_pages.css.scss */
+.contact h3 {
+  text-transform: uppercase;
+}
+/* line 382, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/static_pages.css.scss */
+.contact .button {
+  border: 2px solid #0099cc;
+  color: #0099cc;
+}
+
+@media (max-width: 900px) {
+  /* line 392, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/static_pages.css.scss */
+  .contact .about_text h4 {
+    padding-top: inherit;
+  }
+}
+/*.wrap {
+    display: flex;
+    flex-direction: column;
+  }*/
+/* ------ footer styles ------*/
+/* line 412, /Users/MacBookPro/Desktop/nameofapp/app/assets/stylesheets/static_pages.css.scss */
+.main-footer {
+  font-size: 1.25em;
+  text-align: center;
+  margin: 5px 5px 0 5px;
+  padding-top: 5px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+@import "bootstrap";
+
